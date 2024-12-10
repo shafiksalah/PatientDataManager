@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Data Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>إدارة بيانات المرضى</h1>
+  </header>
+  <main>
+    <div id="display-interface">
+      <h2>واجهة العرض</h2>
+      <p>سيتم هنا عرض بيانات المرضى.</p>
+    </div>
+    <div id="input-interface">
+      <h2>واجهة الإدخال</h2>
+      <form id="patient-form">
+        <label for="patient-name">اسم المريض:</label>
+        <input type="text" id="patient-name" required>
+        
+        <label for="patient-age">العمر:</label>
+        <input type="number" id="patient-age" required>
+        
+        <label for="patient-history">السجل الطبي:</label>
+        <textarea id="patient-history" rows="4"></textarea>
+        
+        <button type="submit">حفظ البيانات</button>
+      </form>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
